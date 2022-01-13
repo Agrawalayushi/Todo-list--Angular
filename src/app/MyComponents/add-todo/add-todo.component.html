@@ -1,0 +1,18 @@
+<div class="my-3">
+<h3> Add a Todo</h3>
+<form (ngSubmit)="onSubmit()" >
+    <br>
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label">Todo Title</label>
+      <input type="text" [(ngModel)]="title" class="form-control" id= "title" name="title" aria-describedby="emailHelp">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="desc" class="form-label">Todo Description</label>
+      <input type="text" class="form-control" name="desc" id="desc" [(ngModel)]="desc">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-sm btn-primary">Add Todo</button>
+  </form>
+
+</div>
